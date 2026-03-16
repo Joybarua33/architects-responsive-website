@@ -138,6 +138,22 @@ main > section{
     font-size: 1.23rem;
 
 }
+
+#badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -120px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.feature-architect img{
+    width: 100%;
+}
+
 /* Some Facts */
 .facts-container{
     display: grid;
@@ -189,9 +205,28 @@ main > section{
     margin-top: 40px;   
 }
 
+
+/* Footer Section */
+.footer-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgba(255, 244, 231, 1);
+    margin-top: 130px;
+    height: 100px;
+    margin-bottom: 130px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
 /* responsive  media query*/
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .features, .footer-section{
         flex-direction: column;
     }
     .team-img-container, .facts-container, .sponsor-companies{
@@ -204,10 +239,18 @@ main > section{
     .our-features{
         margin-left: 20px;
     }
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .footer-section{
+        margin-left: 10px;
+    }
+    
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
     .our-features{
@@ -218,7 +261,8 @@ main > section{
         gap: 50px;
         justify-items: center;
     }
-    .some-fact, h3, p{
-        margin-left: 100px;
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
